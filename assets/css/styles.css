@@ -273,6 +273,7 @@ img {
   body {
     padding: 1rem 3rem 0 6rem;
   }
+
   .header {
     padding: 0 3rem 0 6rem;
   }
@@ -339,17 +340,20 @@ img {
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color: var(--header-color);
+  background-color: #333;
   color: var(--first-color-light);
   padding: 1rem 0;
+  margin-left: -100%;
+  margin-right: -100%;
+ 
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  
+  width: 100%; /* Change max-width to width */
   padding: 0 1rem;
 }
 
