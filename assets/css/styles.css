@@ -337,3 +337,41 @@ img {
 }
 
 
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--header-color);
+  color: var(--first-color-light);
+  padding: 1rem 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer__logo a {
+  text-decoration: none;
+  color: var(--first-color-light);
+  font-weight: var(--font-medium);
+  font-size: 1.2rem;
+}
+
+.footer__social {
+  font-size: 1.5rem;
+}
+
+.footer__icon {
+  color: var(--first-color-light);
+  margin-right: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__icon:hover {
+  color: var(--first-color);
+}
+
+
