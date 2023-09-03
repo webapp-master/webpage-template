@@ -341,23 +341,48 @@ img {
 .footer {
   background-color: #292b2c;
   color: #fff;
-  padding: 10px 0; /* Reduced padding on top and bottom */
+  padding: 20px 0; /* Increased padding for better spacing */
   text-align: center;
-  line-height: 0.1; /* Adjust line height for better text spacing */
 }
 
-.footer a {
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Set a maximum width for content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.footer-content {
+  flex: 1; /* Distribute available space evenly */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 15px; /* Add some spacing between links */
+}
+
+.footer-links a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
-
-/* Adjust the footer height for mobile devices */
+/* Responsive design */
 @media screen and (max-width: 768px) {
-  .footer {
-    padding: 10px 0; /* Keep the same padding for smaller screens */
+  .footer-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 15px;
   }
 }
+
