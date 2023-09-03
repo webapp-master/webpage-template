@@ -6,14 +6,19 @@
   --header-height: 3.5rem;
   --nav-width: 219px;
 
-  /*========== Colors ==========*/
-  --first-color: #6923D0;
-  --first-color-light: #F4F0FA;
-  --title-color: #19181B;
-  --text-color: #58555E;
-  --text-color-light: #A5A1AA;
-  --body-color: #F9F6FD;
-  --container-color: #FFFFFF;
+   /*========== Colors ==========*/
+   --first-color: #ffeb3b;
+   --first-color-light: #F4F0FA;
+   --title-color: #19181B;
+   --text-color:#58555E;
+   --text-color-light: white;
+   --body-color: #F9F6FD;
+   --container-color: #1a2035;
+   --header-color: rgb(20, 20, 133);
+   --sidebar-text-icon-color: #8d9498;
+   --company-name-color:white;
+   --sidebar-click-color: rgb(20, 20, 133);
+
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -70,7 +75,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--container-color);
+  background-color: var(--header-color);
   box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
   padding: 0 1rem;
   z-index: var(--z-fixed);
@@ -90,7 +95,7 @@ img {
 }
 
 .header__logo {
-  color: var(--title-color);
+  color: var(--first-color-light);
   font-weight: var(--font-medium);
   display: none;
 }
@@ -180,7 +185,7 @@ img {
 .nav__link {
   display: flex;
   align-items: center;
-  color: var(--text-color);
+  color: var(--sidebar-text-icon-color);
 }
 
 .nav__link:hover {
@@ -328,5 +333,31 @@ img {
   }
   .nav:hover .nav__dropdown-icon {
     opacity: 1;
+  }
+}
+
+
+/* CSS for the footer */
+.footer {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 10px 0; /* Reduced padding on top and bottom */
+  text-align: center;
+  line-height: 0.1; /* Adjust line height for better text spacing */
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust the footer height for mobile devices */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px 0; /* Keep the same padding for smaller screens */
   }
 }
