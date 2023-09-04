@@ -343,8 +343,8 @@ img {
   background-color: #333;
   color: var(--first-color-light);
   padding: 1rem 0;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin-left: -8rem;
+  margin-right: -8rem;
  
 }
 
@@ -354,7 +354,7 @@ img {
   align-items: center;
   
   width: 100%; /* Change max-width to width */
-  padding: 0 1rem;
+  padding: 0 10rem 0 10rem;
 }
 
 .footer__logo a {
@@ -377,5 +377,3 @@ img {
 .footer__icon:hover {
   color: var(--first-color);
 }
-
-
