@@ -377,3 +377,27 @@ img {
 .footer__icon:hover {
   color: var(--first-color);
 }
+
+
+/* Style dropdown items as buttons */
+.nav__dropdown-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--title-color); /* Dark background color */
+  color: var(--text-color-light);
+  text-align: center;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Change button background color on hover */
+.nav__dropdown-item:hover {
+  background-color: var(--first-color); /* Change to your desired hover color */
+  color: var(--text-color-light);
+}
+
+/* Change button background color when active (clicked) */
+.nav__dropdown-item.active {
+  background-color: var(--first-color); /* Change to your desired active color */
+}
