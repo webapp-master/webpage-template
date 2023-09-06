@@ -125,7 +125,7 @@ img {
 }
 
 .header__toggle {
-  color: var(--title-color);
+  color: var(--first-color-light);
   cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color:var(--first-color);
 }
 
 .nav__icon {
@@ -379,21 +379,24 @@ img {
 }
 
 
+                    /*========== NAV   ANEX==========*/
+
+
 /* Style dropdown items as buttons */
 .nav__dropdown-item {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: var(--title-color); /* Dark background color */
+  background-color: var( --container-color); 
   color: var(--text-color-light);
   text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 1rem; /* Adjust the value to control the roundness of the corners */
   transition: background-color 0.3s ease-in-out;
   text-decoration: none;
 }
 
 /* Change button background color on hover */
 .nav__dropdown-item:hover {
-  background-color: var(--first-color); /* Change to your desired hover color */
+  background-color: var(--header-color); /* Change to your desired hover color */
   color: var(--text-color-light);
 }
 
