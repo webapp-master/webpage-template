@@ -340,7 +340,7 @@ img {
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color: #333;
+  background-color:  rgba(221, 228, 232, 0.436);
   color: var(--first-color-light);
   padding: 1rem 0;
   margin-left: -8rem;
@@ -359,7 +359,7 @@ img {
 
 .footer__logo a {
   text-decoration: none;
-  color: var(--first-color-light);
+  color: var(--container-color);
   font-weight: var(--font-medium);
   font-size: 1.2rem;
 }
@@ -369,13 +369,13 @@ img {
 }
 
 .footer__icon {
-  color: var(--first-color-light);
+  color: var(--container-color);
   margin-right: 1rem;
   transition: color 0.3s ease-in-out;
 }
 
 .footer__icon:hover {
-  color: var(--first-color);
+  color: var(--header-color);
 }
 
 
