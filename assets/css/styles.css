@@ -346,6 +346,8 @@ img {
   text-align: center; /* Center-align the content */
   border: 1px solid var(--first-color-light); /* Add a border */
   border-radius: 10px; /* Add rounded corners */
+  margin-left: -8rem;
+  margin-right: -8rem;
 }
 
 .footer__container {
