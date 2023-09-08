@@ -357,9 +357,10 @@ img {
   align-items: center;
   width: 100%;
   padding: 0 10rem 0 10rem;
- 
   
 }
+
+
 
 .footer__logo {
   border: 1px solid black; /* Add a border */
@@ -372,7 +373,6 @@ img {
   font-weight: var(--font-medium);
   font-size: 1.2rem;
   margin-bottom: 1rem; /* Add spacing below the logo on smaller screens */
-  
 }
 
 .footer__copyright {
@@ -395,7 +395,6 @@ img {
   color: var(--container-color);
   margin-right: 1rem;
   transition: color 0.3s ease-in-out;
-  
 }
 
 .footer__icon:hover {
@@ -415,7 +414,6 @@ img {
     margin: 0; /* Remove margins to prevent overlapping */
   }
 }
-
 
 
 
