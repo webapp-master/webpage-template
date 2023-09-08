@@ -340,20 +340,17 @@ img {
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color:  rgba(221, 228, 232, 0.436);
+  background-color: rgba(221, 228, 232, 0.436);
   color: var(--first-color-light);
   padding: 1rem 0;
-  margin-left: -8rem;
-  margin-right: -8rem;
- 
+  text-align: center; /* Center-align the content */
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  width: 100%; /* Change max-width to width */
+  width: 100%;
   padding: 0 10rem 0 10rem;
 }
 
@@ -362,6 +359,12 @@ img {
   color: var(--container-color);
   font-weight: var(--font-medium);
   font-size: 1.2rem;
+}
+
+.footer__copyright {
+  font-weight: var(--font-medium);
+  font-size: 1.2rem;
+  color: var(--container-color); /* Text color same as the logo */
 }
 
 .footer__social {
@@ -377,6 +380,7 @@ img {
 .footer__icon:hover {
   color: var(--header-color);
 }
+
 
 
                     /*========== NAV   ANEX==========*/
