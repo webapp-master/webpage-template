@@ -354,11 +354,14 @@ img {
   align-items: center;
   width: 100%;
   padding: 0 10rem 0 10rem;
+  border: 1px solid var(--first-color-light); /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
+  
 }
 
 .footer__logo a {
   text-decoration: none;
-  color: red;
+  color: rgb(88, 11, 11);
   font-weight: var(--font-medium);
   font-size: 2rem;
 }
@@ -381,6 +384,21 @@ img {
 
 .footer__icon:hover {
   color: var(--header-color);
+}
+
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .footer__logo a,
+  .footer__copyright,
+  .footer__social {
+    margin: 0; /* Remove margins to prevent overlapping */
+  }
 }
 
 
