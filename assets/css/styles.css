@@ -363,7 +363,8 @@ img {
   text-decoration: none;
   color: rgb(88, 11, 11);
   font-weight: var(--font-medium);
-  font-size: 2rem;
+  font-size: 0.2rem;
+  
 }
 
 .footer__copyright {
