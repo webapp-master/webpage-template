@@ -343,16 +343,25 @@ img {
   background-color: rgba(221, 228, 232, 0.436);
   color: var(--first-color-light);
   padding: 1rem 0;
-  text-align: center;
+  text-align: center; /* Center-align the content */
+  border: 1px solid var(--first-color-light); /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .footer__container {
   display: flex;
-  flex-direction: column; /* Stack items vertically on small screens */
-  justify-content: center; /* Vertically center-align content */
-  align-items: center; /* Horizontally center-align content */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Center items horizontally */
+  align-items: center;
   width: 100%;
-  padding: 0 1rem; /* Adjust the padding as needed */
+  padding: 0 10rem 0 10rem;
+ 
+  
+}
+
+.footer__logo {
+  border: 1px solid black; /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .footer__logo a {
@@ -360,28 +369,49 @@ img {
   color: var(--container-color);
   font-weight: var(--font-medium);
   font-size: 1.2rem;
-  margin-bottom: 0.5rem; /* Add spacing between logo and copyright */
+  margin-bottom: 1rem; /* Add spacing below the logo on smaller screens */
+  
 }
 
 .footer__copyright {
   font-weight: var(--font-medium);
   font-size: 1.2rem;
-  color: var(--container-color);
-  margin-bottom: 0.5rem; /* Add spacing between copyright and social icons */
+  color: var(--container-color); /* Text color same as the logo */
+  margin-bottom: 1rem; /* Add spacing below the copyright text on smaller screens */
+  border: 1px solid black; /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .footer__social {
   font-size: 1.5rem;
+  margin-top: 1rem; /* Add spacing above the social icons on smaller screens */
+  border: 1px solid black; /* Add a border */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .footer__icon {
   color: var(--container-color);
   margin-right: 1rem;
   transition: color 0.3s ease-in-out;
+  
 }
 
 .footer__icon:hover {
   color: var(--header-color);
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .footer__logo a,
+  .footer__copyright,
+  .footer__social {
+    margin: 0; /* Remove margins to prevent overlapping */
+  }
 }
 
 
