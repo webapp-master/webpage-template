@@ -95,7 +95,7 @@ img {
 }
 
 .header__logo {
-  color: var(--first-color-light);
+  color: var(--container-color);
   font-weight: var(--font-medium);
   display: none;
 }
@@ -125,7 +125,7 @@ img {
 }
 
 .header__toggle {
-  color: var(--first-color-light);
+  color: var(--container-color);
   cursor: pointer;
 }
 
