@@ -75,7 +75,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--header-color);
+  background-color: rgb(221, 228, 232);
   box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
   padding: 0 1rem;
   z-index: var(--z-fixed);
@@ -340,7 +340,7 @@ img {
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color: rgba(221, 228, 232, 0.436);
+  background-color: rgb(221, 228, 232);
   color: var(--first-color-light);
   padding: 1rem 0;
   text-align: center; /* Center-align the content */
